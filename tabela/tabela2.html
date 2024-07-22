@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 2</title> 
+
+    <style>
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+        height: 100vh;
+      }
+
+      table{
+        border-collapse: collapse;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      caption{
+        font-size: 22px;
+        font-weight: bold;
+        padding: 10px;
+      }
+        
+      th, td{
+        border: 1px solid gray;
+        padding: 10px;
+      }
+        
+      img{
+        height: 50px;
+        width: 75px; 
+      }
+    </style>
+</head>
+<body>
+  <table class="table">
+
+      <caption>COMIDAS FAVORITAS</caption>
+
+    <thead> 
+        <tr>
+            <th>Grupos</th>
+            <th scope="colrow">Nomes</th>
+            <th colspan="3">Escolhas</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <th rowspan="2">Mulheres</th>
+            <td>Beatriz</td>
+            <td>
+                <img src="https://www.gastronomia.com.br/wp-content/uploads/2023/11/comida-com-d-donuts-doce-de-leite-damasco-e-muito-mais.jpg" alt="">
+            </td>
+            <td>
+                <img src="https://topview.com.br/wp-content/uploads/2015/02/batata-frita-abre-e1529084942846.jpg" alt="">
+            </td>
+            <td>
+                <img src="https://blog.deliverymuch.com.br/wp-content/uploads/2020/05/110-comidas-preferidas-durante-a-quarentena-e-dicas-para-voc%C3%AA-aplicar-no-seu-neg%C3%B3cio.jpg" alt="">
+            </td>
+        </tr>
+
+        <tr>
+            <td>Cordeiro</td>
+            <td>
+                <img src="https://www.receiteria.com.br/wp-content/uploads/brigadeirao-na-airfryer-730x480.jpeg" alt="">
+            </td>
+            <td>
+                <img src="https://www.skill.com.br/galeria/repositorio/estrogonofe.jpg" alt="">
+            </td>
+            <td>
+                <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/01/comidas-da-regiao-do-nordeste-moqueca-maranhense.jpg?w=750" alt="">
+            </td>
+        </tr>
+
+        <tr>
+            <th rowspan="2">Homens</th>
+            <td>Victor</td>
+            <td>
+                <img src="https://static.itdg.com.br/images/1200-630/d042c867d621701a4633d37f9d873bc8/receitas-de-comidas-italianas.jpg" alt="">
+            </td>
+            <td>
+                <img src="https://blog.damatacafe.com.br/wp-content/uploads/2023/09/damata-comidas-tipicas-feijoada.jpg" alt="">
+            </td>
+
+            <td>
+                <img src="https://cdn.deliway.com.br/blog/base/f2e/43f/a34/comidas-tipicas-de-minas-gerais.jpg" alt="">
+            </td>
+        </tr>
+
+        <tr>
+            <td>Lucas</td>
+            <td>
+                <img src="https://conteudo.imguol.com.br/c/entretenimento/57/2023/05/05/o-tradicional-bauru-do-ponto-chic-em-sao-paulo-1683321900395_v2_1170x540.jpg" alt="">
+            </td>
+            <td>
+                <img src="https://foodbizbrasil.com/wp-content/uploads/2023/02/Comidas-de-verao-veja-opcoes-deliciosas-e-refrescantes.jpg" alt="">
+            </td>
+            <td>
+                <img src="https://www.ninhosdobrasil.com.br/sites/default/files/styles/standard/public/2021-08/comidas-tipicas-do-brasil.jpg?itok=uUYSl-QJ" alt="">
+            </td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <th colspan="2">Total</th>
+            <th colspan="3">3 opções</th>
+        </tr>
+        
+    </tfoot>
+  </table>
+</body>
+</html>

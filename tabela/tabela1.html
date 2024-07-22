@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela 1</title>
+</head>
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif; /*TIPO DA FONTE*/
+        height: 100vh;
+      }
+
+      table { 
+        width: 500px; /*LARGURA DA TABELA*/
+        border-collapse: collapse; /*ELIMINA ESPAÇO ENTRE AS CÉLULAS*/
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      td, th {  
+        border: 1px solid black; /*ESPESSURA E ESTILO DA BORDA DAS CÉLULAS*/
+        padding: 10px; /*DISTÂNCIA ENTRE O CONTEÚDO E AS BORDAS*/
+      }
+
+      caption {
+        font-size: 22px; /*TAMANHO DA FONTE DO TÍTULO DA TABELA*/
+        font-weight: bold; /*PESO OU INTENSIDADE DA FONTE*/
+        padding: 10px; /*DISTÂNCIA ENTRE O CONTEÚDO E AS BORDAS*/
+        background-color: rgb(67, 184, 238); /*COR DO FUNDO DO TÍTULO DA TABELA*/
+        border: 1px solid #000;
+      }
+
+      thead, tfoot {
+        background-color: rgb(111, 179, 211); /*COR DO FUNDO DO CABEÇALHO E RODAPÉ DA TABELA*/
+        color: white; /*COR DA FONTE*/
+      }
+      tbody > tr:nth-child(odd) { /*LINHAS ÍMPARES*/
+        background-color: white; /*COR DE FUNDO DA LINHA*/
+      }
+      tbody > tr:nth-child(even) { /*LINHAS PARES*/
+        background-color: rgb(111, 179, 211); /*COR DE FUNDO DA LINHA*/
+      }
+      
+      .estado{
+        text-align: left; /*ALINHAMENTO DO TEXTO DA CLASS "estado"*/
+        color: #fff;
+        text-transform: uppercase;
+      }
+      
+      #n {
+        color: #000;
+      }
+
+    </style>
+
+<body>
+    <table class="table">
+
+      <caption colspan="3">POPULAÇÃO DOS ESTADOS</caption>
+        
+        <thead>
+            <tr>
+              <th colspan="3">Sudeste</th>
+            </tr>
+            <th colspan="2">Estado</th>
+            <th scope="col" style="width: 50px;">Quantidade</th>
+            
+        </thead>
+
+        <tbody>
+          <tr>
+            <td id="n" class="estado"> São Paulo</td>
+            <td colspan="2">44 milhões</td>
+          </tr>
+
+          <tr>
+            <td class="estado">Minas Gerais</td>
+            <td colspan="2">20 milhões</td>
+
+          </tr>
+
+          <tr>
+            <td id="n" class="estado">Rio de Janeiro</td>
+            <td  colspan="2">16 milhões</td>
+          </tr>
+
+          <tr>
+            <td class="estado">Espirito Santo</td>
+            <td colspan="2">4 Milhões</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+              <th colspan="2">Total de habitantes</th>
+              <td colspna="1">84 milhões</td>
+            </tr>
+        
+        </tfoot>
+
+    </table>
+</body>
+</html>

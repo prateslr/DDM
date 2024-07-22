@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: linear-gradient(to left, #3fc52e , #79b30e);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  height: 100vh;
+}
+
+.container{
+  display: grid;
+  gap: 1px;
+  grid-template-columns: 244px 244px 244px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container img:hover {
+  transform: scale(1.1);
+  border-radius: 25px;
+  transition: .5s;
+}
